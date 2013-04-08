@@ -1,0 +1,6 @@
+#ifndef QTXHTTPSERVER_MODULE_H
+#define QTXHTTPSERVER_MODULE_H
+
+#include "../src/httpserver/httpserverglobal.h"
+
+#endif
