@@ -1,8 +1,12 @@
 include(features/qtx_testcase.prf)
 
 
-INCLUDEPATH += ../../../src/httpserver
+QT += network
 
-LIBS += -L../../../lib
+INCLUDEPATH += ../../../src/httpserver \
+               ../../../../qtxmockcore/include
 
-LIBS += -lQtxHttpServer
+LIBS += -L../../../lib \
+        -L../../../../qtxmockcore/lib
+
+LIBS += -lQtxHttpServer -lQtxMockCore
